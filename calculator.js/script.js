@@ -3,7 +3,7 @@
 const btn1 = document.querySelectorAll(".cal-btn");
 const arr = [...btn1];
 let value = "";
-const  screen = document.querySelector('.screen');
+const screen = document.querySelector('.screen');
 
 arr.forEach((btn) => {
    
