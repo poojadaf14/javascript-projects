@@ -20,8 +20,8 @@ arr.forEach((btn) => {
             value = " ";
         }
         else if (x.innerText == 'clear') {
+            value = [...value].slice(0,-1).join('');
             screen.innerText = value;
-            value = slice(0,-1).join('');
             // console.log(value);
         }
         else{
