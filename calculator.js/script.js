@@ -28,7 +28,7 @@ arr.forEach((btn) => {
             value = value + x.innerText;
             // console.log(value);
             screen.innerText = value;
-
+ 
         }
     });
 })
