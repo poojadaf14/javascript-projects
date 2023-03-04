@@ -35,8 +35,10 @@ console.log(answer);
 var lp = 799;
 var sp = 199;
 var dicountPercent =(799-199)/799*100;
-console.log("discountpercantis",dicountPercent);
+console.log("discount percent is",dicountPercent);
 
  var DisplaydicountPercent = Math.round(dicountPercent);
 console.log(DisplaydicountPercent+"% OFF");
 
+var result = lp > sp;
+console.log(typeof result);
