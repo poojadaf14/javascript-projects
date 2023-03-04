@@ -42,3 +42,5 @@ console.log(DisplaydicountPercent+"% OFF");
 
 var result = lp > sp;
 console.log(typeof result);
+ var addition = lp+sp;
+ console.log(typeof addition);
