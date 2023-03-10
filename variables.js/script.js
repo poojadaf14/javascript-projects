@@ -1,29 +1,29 @@
-// const uid = "abc123";
+const uid = "abc123";
 
-// var firstName = "Pooja";
-// var lastname = "Daf";
-// var email =  "xxxxxxxx123";
-// var password = "xxxxxxxx";
-// var confirmPassword = "xxxxxxxx";
-// var Country = "India";
-// var State = "Maharashtra";
-// var courseCount = 0;
-// var isLoggedInFromGOOGLE = false;
-// var isLoggedInFromFaceBook = false;
+var firstName = "Pooja";
+var lastname = "Daf";
+var email =  "xxxxxxxx123";
+var password = "xxxxxxxx";
+var confirmPassword = "xxxxxxxx";
+var Country = "India";
+var State = "Maharashtra";
+var courseCount = 0;
+var isLoggedInFromGOOGLE = false;
+var isLoggedInFromFaceBook = false;
 
 
-// console.log(`
-//  With Unique ID: ${uid}
-//  my name is: ${firstName}
-//  my lastname is: ${lastname}
-// and my email is: ${email}
-// my password is: ${password}
-// i live in: ${Country}
-// in the state: ${State}
-// courseCount is: ${courseCount}
-// isLoggedInFromGOOGLE: ${isLoggedInFromGOOGLE}
-// isLoggedInFromFaceBook: ${isLoggedInFromFaceBook}
-// `)
+console.log(`
+ With Unique ID: ${uid}
+ my name is: ${firstName}
+ my lastname is: ${lastname}
+and my email is: ${email}
+my password is: ${password}
+i live in: ${Country}
+in the state: ${State}
+courseCount is: ${courseCount}
+isLoggedInFromGOOGLE: ${isLoggedInFromGOOGLE}
+isLoggedInFromFaceBook: ${isLoggedInFromFaceBook}
+`)
 
 var num1 = 220;
 var num2 = 399;
@@ -42,5 +42,19 @@ console.log(DisplaydicountPercent+"% OFF");
 
 var result = lp > sp;
 console.log(typeof result);
- var addition = lp+sp;
- console.log(typeof addition);
+ var addresult = lp+sp;
+ console.log(addresult);
+
+ var temp = 20;
+
+ if (temp < 30) {
+    console.log("its cold outside");
+ }
+ if(temp>30) {
+   console.log("its moderate");
+
+ }else{
+   console.log("its hot");
+ }
+  
+ 
