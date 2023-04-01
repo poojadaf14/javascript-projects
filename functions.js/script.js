@@ -21,3 +21,14 @@ function sum(arr){
 let sumarray = [1,2,3,4,5,6,7];
 let arrayresult = sum(sumarray);
 console.log(arrayresult);
+
+
+function pooja(){
+    let sum = 0;
+    for(let i = 0; i< arguments.length; i++){
+sum = sum + arguments[i];
+    }
+    return sum;
+}
+
+console.log(pooja(23,33,2,4,6,7,8,9));
