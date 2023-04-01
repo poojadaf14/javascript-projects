@@ -32,3 +32,12 @@ sum = sum + arguments[i];
 }
 
 console.log(pooja(23,33,2,4,6,7,8,9));
+
+
+// arrow function
+
+ let me = (var1, var2) => {
+    console.log('I am a student', var1, var2);
+ };
+
+ me(1,2);
