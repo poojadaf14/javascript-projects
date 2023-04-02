@@ -34,6 +34,7 @@ sum = sum + arguments[i];
 console.log(pooja(23,33,2,4,6,7,8,9));
 
 
+
 // arrow function
 
  let me = (var1, var2) => {
@@ -41,3 +42,23 @@ console.log(pooja(23,33,2,4,6,7,8,9));
  };
 
  me(1,2);
+
+
+
+//  Object
+
+let username = {
+    firstname:'pooja',
+    lastname: 'daf',
+    role: 'student',
+    logincount: 25,
+}
+console.log(username);
+
+username.logincount = 45;
+console.log(username);
+
+
+for(let x in username){
+    console.log(username[x]);
+}
