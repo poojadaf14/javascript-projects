@@ -69,12 +69,36 @@
 
 // objects
 
-const powers = {
-    fly: true,
-    coardinate: Math.random()+2
-}
+// const powers = {
+//     fly: true,
+//     coardinate: Math.random()+2
+// }
 
-let obj3 = Object.create(powers);
+// let obj3 = Object.create(powers);
+// console.log(obj3);
+// console.log(obj3.coardinate);
+// console.log(Object.getPrototypeOf(obj3));  
+
+
+// part 2
+
+// const obj2 = Object.create({})
+// Object.defineProperty(obj2, "book", {
+// get: () => 'redbook'
+// }) 
+
+// console.log(obj2.book);
+// console.log(object.getPrototypeOf(obj2));
+// console.log(obj2.book);
+
+// part 3
+
+const obj3 = {
+    comics: 'marvel',
+    pen: '',
+    printcomic: function(){
+        this.pen += 'redpen'
+        console.log(this);
+    }
+}
 console.log(obj3);
-console.log(obj3.coardinate);
-console.log(Object.getPrototypeOf(obj3));
