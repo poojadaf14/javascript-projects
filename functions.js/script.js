@@ -1,3 +1,4 @@
+//  let myheroes = ["spiderman", "thor"];
 
 // function URL(url, domain){
 //     let con = 'https://';
@@ -93,12 +94,16 @@
 
 // part 3
 
-const obj3 = {
-    comics: 'marvel',
-    pen: '',
-    printcomic: function(){
-        this.pen += 'redpen'
-        console.log(this);
-    }
-}
-console.log(obj3);
+// const obj3 = {
+//     comics: 'marvel',
+//     pen: '',
+//     printcomic: function(){
+//         this.pen += 'redpen'
+//         console.log(this);
+//     }
+// }
+// console.log(obj3);
+
+
+
+// *closure learn from youtube----hitesh sir
