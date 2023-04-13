@@ -17,11 +17,22 @@
 <button id="green">green</button>
 </body>
 <script>
-    document.getElementById('orange').onclick = function(){
-        document.body.style.backgroundColor = `orange`
+    // document.getElementById('orange').onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+ function mycolor(color){
+
+    return function(){
+    document.body.style.backgroundColor = `${color}`
+   }
     }
-    document.getElementById('green').onclick = function(){
-        document.body.style.backgroundColor = `green`
-    }
+
+    document.getElementById('orange').onclick = mycolor('orange')
+    document.getElementById('green').onclick = mycolor('green')
+    
 </script>
 </html>
