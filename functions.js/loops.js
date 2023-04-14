@@ -18,6 +18,9 @@ for (const x of mystates) {
 console.log(x);
 
 
-// // for each
-// const  mynewstates = ["maharashtra", "Delhi", "Assam", "Tamil Nadu"];
-//   mynewstates.forEach((x) => console.log(x));
+// for each
+
+  mystates.forEach((x) => (console.log(x)));
+
+
+  
