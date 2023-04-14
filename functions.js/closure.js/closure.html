@@ -28,19 +28,32 @@
     //     document.body.style.backgroundColor = `green`
     // }
 
- function mycolor(color){
+//  function mycolor(color){
 
-    return function(){
-    document.body.style.backgroundColor = `${color}`
-   }
-    }
+//     return function(){
+//     document.body.style.backgroundColor = `${color}`
+//    }
+//     }
 
-    document.getElementById('orange').onclick = mycolor('orange')
-    document.getElementById('green').onclick = mycolor('green')
-    document.getElementById('pink').onclick = mycolor('pink')
-    document.getElementById('purple').onclick = mycolor('purple')
-    document.getElementById('red').onclick = mycolor('red')
-    document.getElementById('skyblue').onclick = mycolor('skyblue')
+//     document.getElementById('orange').onclick = mycolor('orange')
+//     document.getElementById('green').onclick = mycolor('green')
+//     document.getElementById('pink').onclick = mycolor('pink')
+//     document.getElementById('purple').onclick = mycolor('purple')
+//     document.getElementById('red').onclick = mycolor('red')
+//     document.getElementById('skyblue').onclick = mycolor('skyblue')
    
+
+   function addition(x){
+    return function(y){
+        return x+y;
+    };
+   }
+
+   var add5 = addition(5);
+   console.log(add5(5));
+
+   console.log(addition(6)(5));
+
+
 </script>
 </html>
