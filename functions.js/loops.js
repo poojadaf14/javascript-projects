@@ -36,3 +36,10 @@ mobile: "xxxxxxyyy",
 for (const x in myname) {
    console.log(myname[x]);
 }
+
+// another way of writing---
+
+
+for (const x in myname) {
+    console.log(`key is: ${x} and value is : ${myname[x]}`);
+ }
