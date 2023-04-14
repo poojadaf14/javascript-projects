@@ -107,3 +107,28 @@
 
 
 // *closure learn from youtube----hitesh sir
+
+// functions in js and meta tags in html - hw
+
+
+function sayhello(){
+    console.log("hello everyone");
+}
+
+sayhello();
+sayhello();
+
+function me(a,b){
+    return a+b
+}
+
+let myfunction = me(4,5);
+console.log(myfunction);
+
+function pooja(var1, var2){
+   return var1-var2;
+}
+
+ let myname = pooja(10,4);
+ console.log(myname);
+ 
