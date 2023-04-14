@@ -1,30 +1,38 @@
 
-// // for
-// // const  mystates = ["maharashtra", "Delhi", "Assam", 1456, "Tamil Nadu"];
+1 // for
+const  mystates = ["maharashtra", "Delhi", "Assam", 1456, "Tamil Nadu"];
 
-// for(let i=0; i<mystates.length; i++){
-//     console.log(mystates[i]);
+for(let i=0; i<mystates.length; i++){
+    console.log(mystates[i]);
 
-// }
+}
 
+2 //   while
+
+let y = 0;
+
+while(y < mystates.length){
+    console.log(mystates[y]);
+    y++;
+}
 
 
     
-// // for of
-// for (const x of mystates) {
-//     return x;
+3 // for of
+for (const x of mystates) {
+    return x;
     
-// }
-// console.log(x);
+}
+console.log(x);
 
 
-// // for each
+4 // for each
 
-//   mystates.forEach((x) => (console.log(x)));
+  mystates.forEach((x) => (console.log(x)));
 
 
-  
-// for in loop for object
+
+5 // for in loop for object
 
 const myname = {
     firstname: "pooja",
@@ -33,13 +41,23 @@ const myname = {
 mobile: "xxxxxxyyy",
 };
 
-for (const x in myname) {
-   console.log(myname[x]);
+for (const p in myname) {
+   console.log(myname[p]);
 }
 
 // another way of writing---
 
 
-for (const x in myname) {
-    console.log(`key is: ${x} and value is : ${myname[x]}`);
+for (const p in myname) {
+    console.log(`key is: ${p} and value is : ${myname[p]}`);
  }
+
+
+6 //  do while condition
+
+let v = 20;
+
+do {
+    console.log(v);
+} while (v<10);
+  
