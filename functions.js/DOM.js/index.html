@@ -13,10 +13,10 @@
 </head>
 <body>
     <h1>hello world!!</h1>
-    <p id="js" class="tech"></p>
+    <p id="js" class="tech">i'm learning javascript.</p>
     <ul>
-    <li id="fsjs1">potato</li>
-    <li id="fsjs2"></li>tomoto
+    <li id="fsjs1" class="tech">potato</li>
+    <li id="fsjs2" class="tech"></li>tomoto
 </ul>
 <script>
     console.log(document);
@@ -29,7 +29,7 @@
     let val = document.getElementById("fsjs1")
     console.log(val.innerHTML);
     
-
+    let value = document.querySelector("h1").style.backgroundColor = ("red")
 
     let myclass = document.getElementsByClassName("tech")
     console.log(myclass);
@@ -57,6 +57,8 @@ if (value1 == 6) {
 } else {
     document.getElementById("js").innerText = "false"
 }
+
+
 </script>
 </body>
 </html>
