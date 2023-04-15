@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom/javascript</title>
+    <style>
+        body{
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world!!</h1>
+    <p id="js" class="tech"></p>
+    <ul>
+    <li id="fsjs1">potato</li>
+    <li id="fsjs2"></li>tomoto
+</ul>
+<script>
+    console.log(document);
+    console.log(window.document);
+    console.log(document.documentElement);
+    console.log(document.head);
+    console.log(document.body);
+    console.log(document.body.firstElementChild);
+    
+    let val = document.getElementById("fsjs1")
+    console.log(val.innerHTML);
+    
+
+
+    let myclass = document.getElementsByClassName("tech")
+    console.log(myclass);
+    
+    alert("hey there")
+    setTimeout(() => {
+        alert("hello javascript developer")
+    }, 2000);
+
+
+// confirm box
+
+let msg  = confirm("are you sure?")
+if (msg) {
+    document.getElementById("js").innerHTML = "he/she confirm"
+} else {
+    document.getElementById("js").innerHTML = "he/she not confirm"
+}
+
+// prompt
+
+let value1 = prompt("solve this 20-14");
+if (value1) {
+    document.getElementById("js").innerText = "success"
+} else {
+    document.getElementById("js").innerText = "false"
+}
+</script>
+</body>
+</html>
