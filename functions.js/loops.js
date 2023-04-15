@@ -49,7 +49,7 @@ for (const p in myname) {
 
 
 for (const p in myname) {
-    console.log(`key is: ${p} and value is : ${myname[p]}`);
+    console.log(`key is: ${p} and value is: ${myname[p]}`);
  }
 
 
