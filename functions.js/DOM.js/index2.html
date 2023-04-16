@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom/js</title>
+</head>
+<body>
+    <p>Click "Remove" to remove the first item from the list:</p>
+<button onclick="myFunction()">Remove</button>
+<ul id="myList">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ul>
+
+  <script>
+    function myFunction() {
+      const list = document.getElementById("myList");
+      list.removeChild(list.firstElementChild);
+    }
+          // OR-
+
+    function myFunction() {
+  const list = document.getElementById("myList");
+  while (list.hasChildNodes()) {
+    list.removeChild(list.firstChild);
+  }
+}
+    </script>
+    
+</body>
+</html>
