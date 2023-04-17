@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener</title>
+</head>
+<body>
+<h1>leraning event listener</h1>
+<p id="js1">ineuron</p>
+<p id="js2">ineuron.ai</p>
+<p id="js3">one</p>
+<button id="btn1">click</button>
+
+
+<button id="btn2">try it</button>
+<!-- <button id="btn3">show date</button>
+<button id="btn4">show ex</button>
+    -->
+
+<input type="text" name="enter text" id="text">
+<p id="fsjs"></p>
+
+<input type="text" name="write text" id="text2">
+<p id="fsjs2"></p>
+
+
+<script>
+
+    // 1. click
+    document.addEventListener("click", hello)
+    function hello(){
+    document.getElementById("btn1").innerText = "mouser clicked"
+    }
+
+   //  2. dblclick
+     document.addEventListener("dblclick", heyy)
+     function heyy (){
+     document.getElementById("js1").innerText = "by hitesh sir"
+     }
+
+    // 3. mouseenter
+    document.addEventListener("mouseenter", myevent)
+     function  myevent (){
+     document.getElementById("js2").innerText = "event run"
+     
+     }
+
+
+    //  4. mouseleave
+    document.addEventListener("mouseenter", myevent1)
+     function  myevent1 (){
+     document.getElementById("js3").innerText = ""
+     }
+
+
+    //  5. mouseover
+    document.addEventListener("mouseover", myevent2)
+     function  myevent2 (){
+     document.getElementById("btn2").innerText = "tried"
+     document.getElementById("btn2").style.backgroundColor = "orange"
+     }
+
+     
+
+    //  6.input
+    document.addEventListener("input", myValue);
+    function myValue(x) {
+    document.getElementById("fsjs").textContent = x.target.value;
+     } 
+
+    //  7.keydown
+    document.addEventListener("keydown", newValue);
+    function newValue(p) {
+    document.getElementById("fsjs2").textContent += `${p.code}`;
+     } 
+
+
+
+     
+
+
+
+
+</script>
+</body>
+</html>
