@@ -7,8 +7,15 @@
     <title>dom/js</title>
 </head>
 <body>
+
+  <!-- remove element // remove child -->
     <p>Click "Remove" to remove the first item from the list:</p>
 <button onclick="myFunction()">Remove</button>
+
+
+<button onclick="math()" id="fsjs2">submit</button>
+<p id="js"></p>
+
 <ul id="myList">
     <li>one</li>
     <li>two</li>
@@ -28,6 +35,48 @@
     list.removeChild(list.firstChild);
   }
 }
+
+// create element on screen
+
+let title = document.createElement("h1")
+title.className = "title";
+title.style.fontSize = "40px";
+title.style.color = "green";
+title.textContent =" creating new element of heading h1"
+console.log (title);
+document.body.appendChild(title)
+
+// <!-- //using for loop creating multiple para on body using dom only -->
+    
+for (let i = 0; i <= 5; i++) {
+          let para =  document.createElement ("p")
+          para.className = "fsjs";
+          para.style.fontSize = "16px";
+          console.log(para);
+          para.textContent = i;
+          document.body.appendChild(para)
+       }
+
+
+
+// after clicking  submit button popup will come.
+
+function math(){
+  let val = prompt("solve this 60-40");
+  if (val==20) {
+    document.getElementById("js").innerText = "success redirect";
+document.getElementById("fsjs2").style.backgroundColor = "green"
+  } else {
+    document.getElementById("js").innerText= "fail, try again"
+    document.getElementById("fsjs2").style.backgroundColor = "red"
+  }
+
+}
+
+
+
+
+
     </script>
     
 </body>
