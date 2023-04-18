@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color changing background</title>
+
+    <style>
+        body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+button{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #d8fcb4;
+    border-color: black;
+}
+    </style>
+</head>
+
+<body>
+    <button id="button">change color</button>
+
+    <script>
+    const btn = document.querySelector("button");
+    function random(number) {
+    return Math.floor(Math.random() * (number + 1));
+    }
+
+    btn.addEventListener("click", () => {
+    const randomColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+    document.body.style.backgroundColor = randomColor;
+    });
+
+    </script>
+</body>
+</html>
+
+
+   
