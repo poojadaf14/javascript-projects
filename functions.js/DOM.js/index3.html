@@ -25,7 +25,14 @@
 <input type="text" name="write text" id="text2">
 <p id="fsjs2"></p>
 
+<input type="text" name="write text1" id="text3">
+<p id="fsjs3"></p>
 
+<input type="text" name="keyname" id="keyname">
+<p id="key"></p>
+
+
+<img id="logo">
 <script>
 
     // 1. click
@@ -76,13 +83,32 @@
     document.getElementById("fsjs2").textContent += `${p.code}`;
      } 
 
-
-
+    //  8. keyup
+     
+    document.addEventListener("keyup", new2);
+    function new2(y) {
+    document.getElementById("fsjs3").textContent += `${y.code}`;
+     } 
      
 
+    // 9. keypress
+    document.addEventListener("keypress", press1);
+    function press1(k) {
+    document.getElementById("key").textContent += `${k.code}`;
+     } 
 
 
+// 10. onload
 
+     document.addEventListener('onload', logonew);
+     function logonew(){
+            console.log('Logo has been loaded!');
+
+        }
+        logo.src = "logo.png";
+
+
+        // these are the types of event listener!
 </script>
 </body>
 </html>
