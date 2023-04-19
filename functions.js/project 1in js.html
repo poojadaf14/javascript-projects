@@ -24,6 +24,7 @@
 <body>
     <script>
         let body = document.querySelector("body");
+        
         body.addEventListener("click", function(event){
           let element = document.createElement("div");
           element.classList.add("round");
@@ -32,6 +33,8 @@
           element.style.top = event.clientY + "px";
           body.appendChild(element);
         });
+
+        
     </script>
 </body>
 </html>
