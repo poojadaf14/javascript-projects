@@ -106,7 +106,7 @@
 
 
 
-// *closure learn from youtube----hitesh sir
+// *closure -hw
 
 // functions in js and meta tags in html - hw
 
