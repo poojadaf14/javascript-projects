@@ -159,24 +159,5 @@
 // console.log(Math.pow(3,3));
 // console.log(Math.sin(90));
 
-// let arr = [1,2,3,7,4,5,6,7];
-// console.log(arr.push(10));
-
-
-
-function sum(num1, num2) {
-  let num1 = 16;
-  let num2 = 54;
-
-  console.log('addition of two numbers are:', num1 + num2);
- }
-
-// function sum(val1, val2) {
-//    let result = "val1 + val2";
-//    return result;
- 
-// }
-// let add = sum(12, 13);
-// console.log(add);
-
-
+let arr = [1,2,3,7,4,5,6,7];
+console.log(arr.push(10));
