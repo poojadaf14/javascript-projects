@@ -19,11 +19,6 @@ arr.forEach((btn) => {
             screen.innerHTML = " ";
             value = " ";
         }
-        else if (x.innerText == 'clear') {
-            value = [...value].slice(0,-1).join('');
-            screen.innerText = value;
-            // console.log(value);
-        }
         else{
             value = value + x.innerText;
             // console.log(value);
